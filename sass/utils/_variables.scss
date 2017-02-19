@@ -1,0 +1,59 @@
+//Global
+$abs: absolute;
+$b: bottom;
+$cl: color;
+$d: display;
+$fl: float;
+$fx: fixed;
+$h: height;
+$l: left;
+$no: none;
+$r: right;
+$rel: relative;
+$rp: repeat;
+$sz: size;
+$t: top;
+$w: width;
+$z: z-index;
+
+//Background
+$bg: background;
+$bgimg: #{$bg}-image;
+$bgp: #{$bg}-position;
+$bgrp: #{$bg}-#{$rp};
+$rpx: #{$rp}-x;
+$rpy: #{$rp}-y;
+$bgsz: #{$bg}-size;
+
+//Border
+$bd: border;
+$bdt: #{$bd}-#{$t};
+$bdr: #{$bd}-#{$r};
+$bdb: #{$bd}-#{$b};
+$bdl: #{$bd}-#{$l};
+
+//Margin
+$m: margin;
+$mt: #{$m}-#{$t};
+$mr: #{$m}-#{$r};
+$mb: #{$m}-#{$b};
+$ml: #{$m}-#{$l};
+
+//Padding
+$p: padding;
+$pt: #{$p}-#{$t};
+$pr: #{$p}-#{$r};
+$pb: #{$p}-#{$b};
+$pl: #{$p}-#{$l};
+
+//Typography
+$f: font;
+$ff: #{$f}-family;
+$fst: #{$f}-style;
+$fsz: #{$f}-#{$sz};
+$fw: #{$f}-weight;
+$lh: line-#{$h};
+$txt: text;
+$ta: #{$txt}-align;
+$td: #{$txt}-decoration;
+$tt: #{$txt}-transform;
