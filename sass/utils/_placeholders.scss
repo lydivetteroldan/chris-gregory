@@ -6,6 +6,11 @@
   #{$cl}: $gray;
 }
 
+%expander {
+  #{$h}: auto;
+  overflow: hidden;
+}
+
 %link {
   &,
   &:active,
@@ -20,4 +25,9 @@
   &:focus {
     #{$cl}: $gray;
   }
+}
+
+%responsive-img {
+  #{$w}: 100%;
+  #{$h}: auto;
 }

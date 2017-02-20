@@ -2,8 +2,6 @@
   #{$bgc}: $black;
 }
 
-@media (min-width: 992px) {
-  .page-navbar .navbar-right {
-    #{$pr}: 3em;
-  }
+.page-navbar .nav>li>a:last-child {
+  #{$pr}: 0;
 }

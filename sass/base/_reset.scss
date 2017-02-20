@@ -9,11 +9,14 @@ a, li>a {
 
 @media (min-width: 768px) {
   .page-container {
-    #{$p}: 30px 45px;
+    #{$p}: 30px 15px;
   }
   
   .page-footer .page-container {
-    #{$p}: 0 45px 15px;
+    #{$p}: 0 15px 15px;
   }
 }
 
+.page-row {
+  @extend %expander;
+}
