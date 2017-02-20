@@ -1,0 +1,23 @@
+%color-primary {
+  #{$cl}: $black;
+}
+
+%color-secondary {
+  #{$cl}: $gray;
+}
+
+%link {
+  &,
+  &:active,
+  &:hover,
+  &:focus {
+    #{$bgc}: transparent;
+    #{$td}: $no;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    #{$cl}: $gray;
+  }
+}

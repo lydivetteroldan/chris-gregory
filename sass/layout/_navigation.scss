@@ -1,0 +1,8 @@
+.nav>li>a {
+  @extend %link;
+}
+
+.page-link {
+ @extend %link;
+ @extend %color-primary;
+}

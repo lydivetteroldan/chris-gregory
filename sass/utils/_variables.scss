@@ -1,25 +1,35 @@
+//Site-specific
+$black: #222222;
+$gray: #888888;
+$white: #FFFFFF;
+
 //Global
 $abs: absolute;
 $b: bottom;
+$c: center;
 $cl: color;
 $d: display;
 $fl: float;
 $fx: fixed;
 $h: height;
 $l: left;
+$minh: min-#{$h};
 $no: none;
+$pos: position;
 $r: right;
 $rel: relative;
 $rp: repeat;
 $sz: size;
 $t: top;
 $w: width;
+$minw: min-#{$w};
 $z: z-index;
 
 //Background
 $bg: background;
+$bgc: #{$bg}-#{$cl};
 $bgimg: #{$bg}-image;
-$bgp: #{$bg}-position;
+$bgp: #{$bg}-#{$pos};
 $bgrp: #{$bg}-#{$rp};
 $rpx: #{$rp}-x;
 $rpy: #{$rp}-y;

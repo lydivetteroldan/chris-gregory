@@ -1,0 +1,30 @@
+/* Footer styles
+-------------------------------------------------- */
+html {
+  #{$pos}: $rel;
+  #{$minh}: 100%;
+}
+body {
+  #{$mb}: 60px;
+}
+
+.footer {
+  #{$pos}: $abs;
+  #{$b}: 0;
+  #{$w}: 100%;
+  #{$h}: 60px;
+  #{$bgc}: white;
+}
+
+@media (min-width: 768px) {
+  .footer-nav {
+    #{$ta}: $r;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer,
+  .footer-nav {
+    #{$ta}: $c;
+  }
+}
