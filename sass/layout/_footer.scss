@@ -5,14 +5,14 @@ html {
   #{$minh}: 100%;
 }
 body {
-  #{$mb}: 60px;
+  #{$mb}: 30px;
 }
 
 .footer {
   #{$pos}: $abs;
   #{$b}: 0;
   #{$w}: 100%;
-  #{$h}: 60px;
+  #{$h}: 30px;
   #{$bgc}: white;
 }
 
@@ -25,6 +25,6 @@ body {
 @media (max-width: 767px) {
   .footer,
   .footer-nav {
-    #{$ta}: $c;
+    #{$ta}: $l;
   }
 }

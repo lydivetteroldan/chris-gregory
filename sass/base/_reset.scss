@@ -1,0 +1,19 @@
+a, li>a {
+  @extend %link;
+  @extend %color-primary;
+}
+
+.page-container {
+  #{$p}: 1em 1.5em;
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    #{$p}: 30px 45px;
+  }
+  
+  .page-footer .page-container {
+    #{$p}: 0 45px 15px;
+  }
+}
+

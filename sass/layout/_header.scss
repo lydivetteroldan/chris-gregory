@@ -1,3 +1,9 @@
 .navbar-toggle .icon-bar {
   #{$bgc}: $black;
 }
+
+@media (min-width: 992px) {
+  .page-navbar .navbar-right {
+    #{$pr}: 3em;
+  }
+}

@@ -1,3 +1,40 @@
 body {
   #{$ff}: 'Roboto', sans-serif;
 }
+
+.page {
+  &-footer,
+  &-footer .page-container,
+  &-footer .page-link {
+    #{$fsz}: 12px;
+  }
+
+  &-link {
+    #{$fsz}: 18px;
+  }
+
+  &-title,
+  &-title.page-link {
+    #{$fsz}: 21px;
+  }
+}
+
+.page-container--2col p {
+  #{$fsz}: 20px;
+}
+
+@media (max-width: 767px) {
+  .page {
+    &-container,
+    &-container--2col p,
+    &-link,
+    &-title,
+    &-title.page-link {
+      #{$fsz}: 16px;
+    }
+  }
+
+  .page-container--2col .page-link {
+    #{$fsz}: 14px;
+  }
+}
