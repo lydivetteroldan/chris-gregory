@@ -1,21 +1,29 @@
 a, li > a, .page-link {
   color: #222222; }
 
+.page-row {
+  height: auto;
+  overflow: hidden; }
+
 a, li > a, .nav > li > a, .page-link, a:active, .nav > li > a:active, .page-link:active, a:hover, .nav > li > a:hover, .page-link:hover, a:focus, .nav > li > a:focus, .page-link:focus {
   background-color: transparent;
   text-decoration: none; }
 a:active, .nav > li > a:active, .page-link:active, a:hover, .nav > li > a:hover, .page-link:hover, a:focus, .nav > li > a:focus, .page-link:focus {
   color: #888888; }
 
+.page-thumbnail img {
+  width: 100%;
+  height: auto; }
+
 .page-container {
   padding: 1em 1.5em; }
 
 @media (min-width: 768px) {
   .page-container {
-    padding: 30px 45px; }
+    padding: 30px 15px; }
 
   .page-footer .page-container {
-    padding: 0 45px 15px; } }
+    padding: 0 15px 15px; } }
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -35,18 +43,21 @@ body {
 
   .page-container--2col .page-link {
     font-size: 14px; } }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .page-container--2col .page-list {
     float: right; }
 
   .page-container--2col .page-list > li:not(last-child) {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+
+  .page-container--3col .page-row {
+    margin-bottom: 60px; } }
 .navbar-toggle .icon-bar {
   background-color: #222222; }
 
-@media (min-width: 992px) {
-  .page-navbar .navbar-right {
-    padding-right: 3em; } }
+.page-navbar .nav > li > a:last-child {
+  padding-right: 0; }
+
 /* Footer styles
 -------------------------------------------------- */
 html {
@@ -70,5 +81,21 @@ body {
   .footer,
   .footer-nav {
     text-align: left; } }
+@media (min-width: 991px) {
+  .page-thumbnail {
+    position: relative;
+    height: 425px; }
+    .page-thumbnail-inner {
+      position: absolute;
+      bottom: 0; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .page-thumbnail {
+    height: 270px; }
+
+  .page-thumbnail img {
+    height: 240px; } }
+@media (max-width: 992px) {
+  .page-container--3col .page-row {
+    margin-bottom: 0.5em; } }
 
 /*# sourceMappingURL=main.css.map */
