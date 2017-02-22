@@ -1,35 +1,42 @@
 .page-thumbnail img {
   @extend %responsive-img;
+  #{$mb}: 0.5em;
 }
 
-@media (min-width: 991px) {
-  .page-thumbnail {
-    #{$pos}: $abs;
-    #{$b}: 0;
+// @media (min-width: 991px) {
+//   .page-thumbnail {
+//     #{$pos}: $abs;
+//     #{$b}: 0;
 
-    &-container {
-      #{$pos}: $rel;
-      #{$h}: 425px;
+//     &-container {
+//       #{$pos}: $rel;
+//       #{$h}: 425px;
       
-    }
-  }
-}
+//     }
+//   }
+// }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .page-thumbnail {
-    &-container {
-      #{$h}: 270px;
-    }
+// @media (min-width: 768px) and (max-width: 992px) {
+//   .page-thumbnail {
+//     &-container {
+//       #{$h}: 270px;
+//     }
 
-    img {
-      #{$h}: 240px;
-    }
+//     img {
+//       #{$h}: 240px;
+//     }
     
+//   }
+// }
+
+@media (min-width: 768px) {
+  .layout--3col .page-row {
+    #{$mb}: 4em;
   }
 }
 
-@media (max-width: 992px) {
-  .layout--3col .page-row {
-    #{$mb}: 0.5em;
+@media (max-width: 767px) {
+  .page-thumbnail-container {
+    #{$mb}: 4em;
   }
 }
