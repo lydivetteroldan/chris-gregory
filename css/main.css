@@ -34,23 +34,23 @@ body {
 .page-title, .page-title.page-link {
   font-size: 21px; }
 
-.page-container--2col p {
+.layout--2col p {
   font-size: 20px; }
 
 @media (max-width: 767px) {
   .page-container, .page-container--2col p, .page-link, .page-title, .page-title.page-link {
     font-size: 16px; }
 
-  .page-container--2col .page-link {
+  .layout--2col .page-link {
     font-size: 14px; } }
 @media (min-width: 991px) {
-  .page-container--2col .page-list {
+  .layout--2col .page-list {
     float: right; }
 
-  .page-container--2col .page-list > li:not(last-child) {
+  .layout--2col .page-list > li:not(last-child) {
     margin-bottom: 25px; }
 
-  .page-container--3col .page-row {
+  .layout--3col .page-row {
     margin-bottom: 60px; } }
 .navbar-toggle .icon-bar {
   background-color: #222222; }
@@ -58,8 +58,6 @@ body {
 .page-navbar .nav > li > a:last-child {
   padding-right: 0; }
 
-/* Footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%; }
@@ -67,35 +65,34 @@ html {
 body {
   margin-bottom: 30px; }
 
-.footer {
+.footer--sticky {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 30px;
-  background-color: white; }
+  background-color: #FFFFFF; }
 
 @media (min-width: 768px) {
-  .footer-nav {
+  .page-footer-nav {
     text-align: right; } }
 @media (max-width: 767px) {
-  .footer,
-  .footer-nav {
+  .footer--sticky,
+  .page-footer-nav {
     text-align: left; } }
 @media (min-width: 991px) {
   .page-thumbnail {
-    position: relative;
-    height: 425px; }
-    .page-thumbnail-inner {
-      position: absolute;
-      bottom: 0; } }
+    position: absolute;
+    bottom: 0; }
+    .page-thumbnail-container {
+      position: relative;
+      height: 425px; } }
 @media (min-width: 768px) and (max-width: 992px) {
-  .page-thumbnail {
+  .page-thumbnail-container {
     height: 270px; }
-
   .page-thumbnail img {
     height: 240px; } }
 @media (max-width: 992px) {
-  .page-container--3col .page-row {
+  .layout--3col .page-row {
     margin-bottom: 0.5em; } }
 
 /*# sourceMappingURL=main.css.map */

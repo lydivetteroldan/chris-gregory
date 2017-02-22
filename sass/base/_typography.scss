@@ -19,7 +19,7 @@ body {
   }
 }
 
-.page-container--2col p {
+.layout--2col p {
   #{$fsz}: 20px;
 }
 
@@ -34,7 +34,7 @@ body {
     }
   }
 
-  .page-container--2col .page-link {
+  .layout--2col .page-link {
     #{$fsz}: 14px;
   }
 }

@@ -1,14 +1,14 @@
 
 @media (min-width: 991px) {
-  .page-container--2col .page-list {
+  .layout--2col .page-list {
     #{$fl}: $r;
   }
 
-  .page-container--2col .page-list>li:not(last-child) {
+  .layout--2col .page-list>li:not(last-child) {
     #{$mb}: 25px;
   }
 
-  .page-container--3col .page-row {
+  .layout--3col .page-row {
     #{$mb}: 60px;
   }
   
