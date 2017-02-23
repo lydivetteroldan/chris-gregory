@@ -1,6 +1,6 @@
 .page-thumbnail img,
 .project-content .project-image img {
-  @extend %responsive-img;
+  @include responsive-img;
   #{$mb}: 0.5em;
 }
 

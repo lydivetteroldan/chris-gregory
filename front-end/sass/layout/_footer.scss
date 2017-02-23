@@ -1,12 +1,3 @@
-html {
-  #{$pos}: $rel;
-  #{$minh}: 100%;
-}
-
-body {
-  #{$mb}: 30px;
-}
-
 .footer--sticky {
   #{$pos}: $abs;
   #{$b}: 0;

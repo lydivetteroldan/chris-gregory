@@ -1,6 +1,21 @@
+@include font-face(HaasBlack, '../fonts/HaasGrotBlack/HaasGrot-Black', eot woff ttf svg);
+@include font-face(HaasBold, '../fonts/HaasGrotBold/HaasGrot-Bold', eot woff ttf svg);
+@include font-face(HaasRoman, '../fonts/HaasGrotRoman/HaasGrot-Roman', eot woff ttf svg);
+@include font-face(HaasThin, '../fonts/HaasGrotThin/HaasGrot-Thin', eot woff ttf svg);
+
+body {
+  #{$ff}: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
+  #{$mb}: 30px;
+}
+
+html {
+  #{$pos}: $rel;
+  #{$minh}: 100%;
+}
+
 a, li>a {
-  @extend %link;
-  @extend %color-primary;
+  @include link-primary;
+  @include color-primary;
 }
 
 .page-container {
@@ -18,5 +33,5 @@ a, li>a {
 }
 
 .page-row {
-  @extend %expander;
+  @include expander;
 }

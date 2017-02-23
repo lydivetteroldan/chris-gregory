@@ -1,10 +1,10 @@
 .nav>li>a {
-  @extend %link;
+  @include link-primary;
 }
 
 .page-link {
- @extend %link;
- @extend %color-primary;
+ @include link-primary;
+ @include color-primary;
 }
 
 .project-pagination {
