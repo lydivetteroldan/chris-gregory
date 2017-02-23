@@ -65,7 +65,7 @@ body {
   .project-pagination, .project-pagination .page-link {
     font-size: 11px; }
   .project-title {
-    #fsz: 18px; } }
+    font-size: 18px; } }
 .project-pagination-next, .project-pagination-prev {
   margin-left: 0.3em; }
 
