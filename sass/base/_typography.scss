@@ -2,6 +2,10 @@ body {
   #{$ff}: 'Roboto', sans-serif;
 }
 
+.layout--2col p {
+  #{$fsz}: 20px;
+}
+
 .page {
   &-footer,
   &-footer .page-container,
@@ -19,10 +23,6 @@ body {
   }
 }
 
-.layout--2col p {
-  #{$fsz}: 20px;
-}
-
 @media (max-width: 767px) {
   .page {
     &-container,
@@ -36,5 +36,52 @@ body {
 
   .layout--2col .page-link {
     #{$fsz}: 14px;
+  }
+}
+
+.project {
+  &-date{
+    #{$fsz}: 13px;
+  }
+
+  &-header-no,
+  &-text,
+  &-text p {
+    #{$fsz}: 18px;
+  }
+  
+  &-pagination,
+  &-pagination .page-link {
+    #{$fsz}: 14px;
+  }
+
+  &-title {
+    #{$fsz}: 21px;
+    letter-spacing: 1px;
+    #{$mb}: 0.5em;
+  }
+}
+
+.project-pagination-next,
+.project-pagination-prev {
+  #{$fsz}: 1em;
+}
+
+@media (max-width: 767px) {
+  .project {
+    &-header-no,
+    &-text,
+    &-text p {
+      #{$fsz}: 16px;
+    }
+
+    &-pagination,
+    &-pagination .page-link {
+      #{$fsz}: 11px;
+    }
+
+    &-title {
+      #{#fsz}: 18px;
+    }
   }
 }

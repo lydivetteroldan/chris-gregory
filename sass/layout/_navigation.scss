@@ -6,3 +6,10 @@
  @extend %link;
  @extend %color-primary;
 }
+
+.project-pagination {
+  &-next,
+  &-prev {
+    #{$ml}: 0.3em;
+  }
+}

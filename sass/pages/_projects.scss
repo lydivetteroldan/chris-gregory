@@ -1,33 +1,23 @@
-.page-thumbnail img {
+.page-thumbnail img,
+.project-content .project-image img {
   @extend %responsive-img;
   #{$mb}: 0.5em;
 }
 
-// @media (min-width: 991px) {
-//   .page-thumbnail {
-//     #{$pos}: $abs;
-//     #{$b}: 0;
+.page-container.project-text {
+  #{$p}: 1.5em;
+}
 
-//     &-container {
-//       #{$pos}: $rel;
-//       #{$h}: 425px;
-      
-//     }
-//   }
-// }
+@media (min-width: 768px) {
+  .page-container.project-text {
+    #{$p}: 3em 3em 1.5em;
+  }
 
-// @media (min-width: 768px) and (max-width: 992px) {
-//   .page-thumbnail {
-//     &-container {
-//       #{$h}: 270px;
-//     }
+}
 
-//     img {
-//       #{$h}: 240px;
-//     }
-    
-//   }
-// }
+.project-header-no {
+  #{$mt}: 2em;
+}
 
 @media (min-width: 768px) {
   .layout--3col .page-row {
