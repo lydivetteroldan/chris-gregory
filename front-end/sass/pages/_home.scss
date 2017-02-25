@@ -52,6 +52,7 @@
         #{$t}: 250px;
         #{$l}: 15px;
         z-index: 2;
+
         &-bottom {
           #{$b}: 0;
           #{$l}: 15px;
@@ -59,15 +60,49 @@
       }
 
       &--full {
-        #{$b}: 480px;
         #{$r}: 20px;
+        #{$b}: 480px;
         z-index: 1;
       }
 
       &--right {
-        #{$r}: 460px;
         #{$t}: 10px;
+        #{$r}: 460px;
         z-index: 3;
+      }
+    }
+  }
+
+  .front-gallery.front-gallery-3 {
+    #{$h}: 1590px;
+
+    .image {
+      &--left {
+        &-bottom {
+          #{$b}: 15px;
+          #{$l}: 15px;
+          z-index: 1;
+        }
+
+        &-top {
+          #{$t}: 250px;
+          #{$l}: 200px;
+          z-index: 3;
+        }
+      }
+
+      &--right {
+        &-bottom {
+          #{$r}: 15px;
+          #{$b}: 460px;
+          z-index: 2
+        }
+
+        &-top {
+          #{$t}: 10px;
+          #{$r}: 180px;
+          z-index: 4;
+        }
       }
     }
   }
