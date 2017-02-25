@@ -32,6 +32,10 @@ a, li>a {
   }
 }
 
+img {
+  #{$h}: auto;
+}
+
 .page-row {
   @include expander;
 }
