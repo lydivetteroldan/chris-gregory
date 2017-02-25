@@ -1,31 +1,30 @@
 .front-gallery {
-  .image {
-    &--left {
+  #{$pos}: $rel;
 
-    }
-
-    &--full {
-
-    }
-
-    &--right {
-      
-    }
+  .project-image {
+    #{$pos}: $abs;
   }
+  
 }
 
-.front-gallery-1 {
+.front-gallery.front-gallery-1 {
+  #{$h}: 1100px;
+
   .image {
     &--left {
-
+      #{$t}: 120px;
+      #{$l}: 15px;
+      z-index: 2;
     }
 
     &--full {
-
+      #{$b}: 20px;
+      #{$r}: 20px;
+      z-index: 1;
     }
 
     &--right {
-      
+      #{$r}: 60px;
     }
   }
 }
