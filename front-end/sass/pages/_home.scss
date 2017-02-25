@@ -45,23 +45,29 @@
   }
 
   .front-gallery.front-gallery-2 {
-    #{$h}: 3000px;
+    #{$h}: 2100px;
 
     .image {
       &--left {
-        #{$t}: 120px;
+        #{$t}: 250px;
         #{$l}: 15px;
         z-index: 2;
+        &-bottom {
+          #{$b}: 0;
+          #{$l}: 15px;
+        }
       }
 
       &--full {
-        #{$b}: 20px;
+        #{$b}: 480px;
         #{$r}: 20px;
         z-index: 1;
       }
 
       &--right {
-        #{$r}: 60px;
+        #{$r}: 460px;
+        #{$t}: 10px;
+        z-index: 3;
       }
     }
   }

@@ -158,17 +158,22 @@ img {
       right: 60px; }
 
   .front-gallery.front-gallery-2 {
-    height: 3000px; }
+    height: 2100px; }
     .front-gallery.front-gallery-2 .image--left {
-      top: 120px;
+      top: 250px;
       left: 15px;
       z-index: 2; }
+      .front-gallery.front-gallery-2 .image--left-bottom {
+        bottom: 0;
+        left: 15px; }
     .front-gallery.front-gallery-2 .image--full {
-      bottom: 20px;
+      bottom: 480px;
       right: 20px;
       z-index: 1; }
     .front-gallery.front-gallery-2 .image--right {
-      right: 60px; } }
+      right: 460px;
+      top: 10px;
+      z-index: 3; } }
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;
