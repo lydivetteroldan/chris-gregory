@@ -24,11 +24,15 @@ a, li>a {
 
 @media (min-width: 768px) {
   .page-container {
-    #{$p}: 30px 15px;
+    #{$p}: 1em 2em;
+  }
+
+  .page-navbar .page-container {
+    #{$p}: 0.5em 2em;
   }
   
   .page-footer .page-container {
-    #{$p}: 0 15px 15px;
+    #{$p}: 0 2em 2em;
   }
 }
 

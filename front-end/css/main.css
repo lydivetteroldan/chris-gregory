@@ -35,10 +35,13 @@ a, li > a {
 
 @media (min-width: 768px) {
   .page-container {
-    padding: 30px 15px; }
+    padding: 1em 2em; }
+
+  .page-navbar .page-container {
+    padding: 0.5em 2em; }
 
   .page-footer .page-container {
-    padding: 0 15px 15px; } }
+    padding: 0 2em 2em; } }
 img {
   height: auto; }
 
