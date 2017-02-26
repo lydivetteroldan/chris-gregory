@@ -1,124 +1,124 @@
-.front-gallery img { #{$w}: 100%; }
+// .front-gallery img { #{$w}: 100%; }
 
-@media (max-width: 991px) {
-  .front-gallery img:not(last-child) {
-    #{$mb}: 2em;
-  }
+// @media (max-width: 991px) {
+//   .front-gallery img:not(last-child) {
+//     #{$mb}: 2em;
+//   }
 
-  .front-gallery .project-image {
-    #{$pos}: initial;
-  }
-}
+//   .front-gallery .project-image {
+//     #{$pos}: initial;
+//   }
+// }
 
-@media (min-width: 992px) {
-  .front-gallery {
-    #{$pos}: $rel;
+// @media (min-width: 992px) {
+//   .front-gallery {
+//     #{$pos}: $rel;
 
-    .project-image { #{$pos}: $abs; } 
-  }
+//     .project-image { #{$pos}: $abs; } 
+//   }
 
-  .front-gallery.front-gallery-1 {
-    #{$h}: 1170px;
+//   .front-gallery.front-gallery-1 {
+//     #{$h}: 1170px;
 
-    .image {
-      &--left {
-        #{$t}: 120px;
-        #{$l}: 15px;
-        z-index: 2;
-      }
+//     .image {
+//       &--left {
+//         #{$t}: 120px;
+//         #{$l}: 15px;
+//         z-index: 2;
+//       }
 
-      &--full {
-        #{$b}: 20px;
-        #{$r}: 20px;
-        z-index: 1;
-      }
+//       &--full {
+//         #{$b}: 20px;
+//         #{$r}: 20px;
+//         z-index: 1;
+//       }
 
-      &--right {
-        #{$r}: 60px;
-      }
-    }
-  }
+//       &--right {
+//         #{$r}: 60px;
+//       }
+//     }
+//   }
 
-  .front-gallery.front-gallery-1 {
+//   .front-gallery.front-gallery-1 {
 
-    .project-image.image {
-      &--left {
-        #{$w}: 378px;
-        #{$h}: 470px;
-      }
+//     .project-image.image {
+//       &--left {
+//         #{$w}: 378px;
+//         #{$h}: 470px;
+//       }
 
-      &--full {
-        #{$w}: 900px;
-        #{$h}: 720px;
-      }
+//       &--full {
+//         #{$w}: 900px;
+//         #{$h}: 720px;
+//       }
 
-      &--right {
-        #{$w}: 300px;
-        #{$h}: 375px;
-      }
-    }
-  }
+//       &--right {
+//         #{$w}: 300px;
+//         #{$h}: 375px;
+//       }
+//     }
+//   }
 
-  .front-gallery.front-gallery-2 {
-    #{$h}: 2100px;
+//   .front-gallery.front-gallery-2 {
+//     #{$h}: 2100px;
 
-    .image {
-      &--left {
-        #{$t}: 250px;
-        #{$l}: 15px;
-        z-index: 2;
+//     .image {
+//       &--left {
+//         #{$t}: 250px;
+//         #{$l}: 15px;
+//         z-index: 2;
 
-        &-bottom {
-          #{$b}: 0;
-          #{$l}: 15px;
-        }
-      }
+//         &-bottom {
+//           #{$b}: 0;
+//           #{$l}: 15px;
+//         }
+//       }
 
-      &--full {
-        #{$r}: 20px;
-        #{$b}: 480px;
-        z-index: 1;
-      }
+//       &--full {
+//         #{$r}: 20px;
+//         #{$b}: 480px;
+//         z-index: 1;
+//       }
 
-      &--right {
-        #{$t}: 10px;
-        #{$r}: 460px;
-        z-index: 3;
-      }
-    }
-  }
+//       &--right {
+//         #{$t}: 10px;
+//         #{$r}: 460px;
+//         z-index: 3;
+//       }
+//     }
+//   }
 
-  .front-gallery.front-gallery-3 {
-    #{$h}: 1590px;
+//   .front-gallery.front-gallery-3 {
+//     #{$h}: 1590px;
 
-    .image {
-      &--left {
-        &-bottom {
-          #{$b}: 15px;
-          #{$l}: 15px;
-          z-index: 1;
-        }
+//     .image {
+//       &--left {
+//         &-bottom {
+//           #{$b}: 15px;
+//           #{$l}: 15px;
+//           z-index: 1;
+//         }
 
-        &-top {
-          #{$t}: 250px;
-          #{$l}: 200px;
-          z-index: 3;
-        }
-      }
+//         &-top {
+//           #{$t}: 250px;
+//           #{$l}: 200px;
+//           z-index: 3;
+//         }
+//       }
 
-      &--right {
-        &-bottom {
-          #{$r}: 15px;
-          #{$b}: 460px;
-          z-index: 2
-        }
+//       &--right {
+//         &-bottom {
+//           #{$r}: 15px;
+//           #{$b}: 460px;
+//           z-index: 2
+//         }
 
-        &-top {
-          #{$t}: 10px;
-          #{$r}: 180px;
-          z-index: 4;
-        }
-      }
-    }
-  }
-}
+//         &-top {
+//           #{$t}: 10px;
+//           #{$r}: 180px;
+//           z-index: 4;
+//         }
+//       }
+//     }
+//   }
+// }

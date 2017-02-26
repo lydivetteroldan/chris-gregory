@@ -3,14 +3,14 @@
 @include font-face(HaasRoman, '../fonts/HaasGrotRoman/HaasGrot-Roman', eot woff ttf svg);
 @include font-face(HaasThin, '../fonts/HaasGrotThin/HaasGrot-Thin', eot woff ttf svg);
 
-body {
-  #{$ff}: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
-  // #{$mb}: 30px;
-}
-
 html {
   #{$pos}: $rel;
   #{$minh}: 100%;
+}
+
+body {
+  #{$ff}: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
+  #{$pt}: 70px;
 }
 
 a, li>a {
