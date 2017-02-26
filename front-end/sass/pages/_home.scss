@@ -7,7 +7,6 @@
 
   p {
     #{$m}: 0.5em 0;
-    #{$cl}: transparent;
   }
 
   img {
@@ -23,10 +22,17 @@
   }
 }
 
-.project-image a:hover {
-  p {
-    #{$cl}: $black;
+@media (min-width: 768px) {
+  .project-image p {
+    #{$cl}: transparent;
   }
+
+  .project-image a:hover {
+    p {
+      #{$cl}: $black;
+    }
+  }
+
 }
 
 // .front-gallery img { #{$w}: 100%; }

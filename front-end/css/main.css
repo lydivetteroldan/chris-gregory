@@ -148,8 +148,7 @@ img {
   .project-image a:active, .project-image a:hover, .project-image a:focus {
     color: #888888; }
 .project-image p {
-  margin: 0.5em 0;
-  color: transparent; }
+  margin: 0.5em 0; }
 .project-image img {
   width: 100%; }
 .project-image.image--right {
@@ -157,9 +156,12 @@ img {
 .project-image.image--left {
   float: left; }
 
-.project-image a:hover p {
-  color: #222222; }
+@media (min-width: 768px) {
+  .project-image p {
+    color: transparent; }
 
+  .project-image a:hover p {
+    color: #222222; } }
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;
