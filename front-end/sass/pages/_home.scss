@@ -1,5 +1,4 @@
 .project-image {
-
   a {
     @include link-primary;
     #{$d}: block;
@@ -22,7 +21,14 @@
   }
 }
 
+
 @media (min-width: 768px) {
+  .project-image.image--right {
+    &.image--xs.image--vertical {
+      #{$mr}: 60px;
+    }
+  }
+  
   .project-image p {
     #{$cl}: transparent;
   }

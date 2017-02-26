@@ -157,6 +157,9 @@ img {
   float: left; }
 
 @media (min-width: 768px) {
+  .project-image.image--right.image--xs.image--vertical {
+    margin-right: 60px; }
+
   .project-image p {
     color: transparent; }
 
