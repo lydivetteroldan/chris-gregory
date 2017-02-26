@@ -1,3 +1,34 @@
+.project-image {
+
+  a {
+    @include link-primary;
+    #{$d}: block;
+  }
+
+  p {
+    #{$m}: 0.5em 0;
+    #{$cl}: transparent;
+  }
+
+  img {
+    #{$w}: 100%;
+  }
+
+  &.image--right {
+    #{$fl}: $r;
+  }
+
+  &.image--left {
+    #{$fl}: $l;
+  }
+}
+
+.project-image a:hover {
+  p {
+    #{$cl}: $black;
+  }
+}
+
 // .front-gallery img { #{$w}: 100%; }
 
 // @media (max-width: 991px) {

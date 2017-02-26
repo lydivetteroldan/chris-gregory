@@ -1,7 +1,3 @@
-.navbar-toggle .icon-bar {
-  #{$bgc}: $black;
-}
-
 .page-navbar-list {
   #{$p}: 15px;
   #{$mb}: 0;
@@ -16,8 +12,4 @@
   .page-navbar-list {
     #{$pr}: 0;
   }
-}
-
-.page-navbar .nav>li>a:last-child {
-  #{$pr}: 0;
 }

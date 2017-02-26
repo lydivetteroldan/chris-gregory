@@ -113,9 +113,6 @@ img {
 
   .layout--3col .page-row {
     margin-bottom: 60px; } }
-.navbar-toggle .icon-bar {
-  background-color: #222222; }
-
 .page-navbar-list {
   padding: 15px;
   margin-bottom: 0;
@@ -127,9 +124,6 @@ img {
 
   .page-navbar-list {
     padding-right: 0; } }
-.page-navbar .nav > li > a:last-child {
-  padding-right: 0; }
-
 .footer--sticky {
   position: absolute;
   bottom: 0;
@@ -146,6 +140,26 @@ img {
   .footer--sticky,
   .page-footer-nav {
     text-align: left; } }
+.project-image a {
+  display: block; }
+  .project-image a, .project-image a:active, .project-image a:hover, .project-image a:focus {
+    background-color: transparent;
+    text-decoration: none; }
+  .project-image a:active, .project-image a:hover, .project-image a:focus {
+    color: #888888; }
+.project-image p {
+  margin: 0.5em 0;
+  color: transparent; }
+.project-image img {
+  width: 100%; }
+.project-image.image--right {
+  float: right; }
+.project-image.image--left {
+  float: left; }
+
+.project-image a:hover p {
+  color: #222222; }
+
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;
