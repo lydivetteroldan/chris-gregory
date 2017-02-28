@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chris Gregory</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +17,7 @@
   </head>
   <body>
     <nav class="navbar navbar-fixed-top page-navbar" role="navigation">
-      <div class="container-fluid">
+      <div class="container-fluid page-container">
         <div class="navbar-header hidden-xs">
           <a class="navbar-brand page-title page-link" href="#">Chris Gregory</a>
         </div>
@@ -43,28 +43,35 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- Content -->
-    <section class="page-section">
-      <div class="container page-container">
-        <div class="row front-gallery front-gallery-1">
-          <div class="col-md-12">
-            <a href="" class="project-image image--left">
-              <img src="http://placehold.it/300x275" alt="Project image">
-            </a>
-            <a href="" class="project-image image--right">
-              <img src="http://placehold.it/378x472" alt="Project image">
-            </a>
-            <a href="" class="project-image image--full">
-              <img src="http://placehold.it/700x558px" alt="Project image">
-            </a>
+    <main class="main" id="main">
+      <div class="front-gallery" data-stellar-offset-parent="true">
+        <section class="container page-container">
+          <div class="row">
+            <div class="col-md-4 project-image image--right image--portrait image--sm" data-stellar-ratio="0.5">
+                <a href=""><img src="images/PDN03.JPG" alt=""></a>
+            </div>
           </div>
-        </div>
-      </div><!-- /front-gallery -->
-      
-    </section>
+        </section><!-- image right portrait small -->
+        <section class="container page-container">
+          <div class="row">
+            <div class="col-md-5 project-image image--left image--portrait image--md" data-stellar-ratio="2.5">
+                <a href=""><img src="images/PDN08.JPG" alt=""></a>
+            </div>
+          </div>
+        </section><!-- image left portrait medium-->
+        <section class="container page-container">
+          <div class="row">
+            <div class="col-md-8 project-image image--right image--landscape image--lg" data-stellar-ratio="1">
+                <a href=""><img src="images/PDN02.JPG" alt=""></a>
+            </div>
+          </div>
+        </section><!-- image right landscape lg-->
+      </div>
+    </main>
 
+    
     <footer class="page-footer">
-      <div class="container page-container">
+      <div class="container-fluid page-container">
         <div class="row">
           <div class="col-sm-6 col-md-6">
             <p>All work © Chris Gregory 2017</p>
@@ -83,6 +90,71 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+
+    <script language="javascript">
+
+    (function(){
+      var ua = navigator.userAgent,
+        isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
+        
+      $(function(){
+
+        if (isMobileWebkit) {
+          $(function(){
+            $('#page').stellar({
+              horizontalScrolling: false,
+              scrollProperty: 'transform',
+              positionProperty: 'transform',
+              verticalOffset: -100,
+              hideDistantElements: false,
+            });
+            
+            //Prevent text selection
+            $(document).mousedown(function(e){
+              e.preventDefault();
+            });
+          });
+
+        } else {
+          $(window).load(function(){
+            $(window).stellar({
+              parallaxBackgrounds: false,
+              horizontalScrolling: false,
+              positionProperty: 'transform',
+              responsive: false,
+              hideDistantElements: false,
+            });
+          });
+
+          $(function(){
+  
+              var $window = $(window);
+          
+              var scrollTime = 1;
+              var scrollDistance = 320;
+              $window.on("mousewheel DOMMouseScroll", function(event){
+          
+                  event.preventDefault(); 
+          
+                  var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+                  var scrollTop = $window.scrollTop();
+                  var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+          
+                  TweenMax.to($window, scrollTime, {
+                      scrollTo : { y: finalScroll, autoKill:true },
+                          ease: Power1.easeOut,   //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
+                          autoKill: true,
+                          overwrite: 5                            
+                      });
+          
+              });
+          
+          });
+
+        }
+      });
+
+    })();
+    </script>
   </body>
 </html>
