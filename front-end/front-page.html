@@ -43,29 +43,38 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <main class="main" id="main">
-      <div class="front-gallery" data-stellar-offset-parent="true">
-        <section class="container-fluid page-container">
-          <div class="row">
-            <div class="col-md-4 project-image image--right image--portrait image--sm" data-stellar-ratio="0.5">
-                <a href=""><img src="images/PDN03.JPG" alt=""></a>
+    <main class="main scrollable vertical" id="page">
+      <div class="container-fluid page-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="front-gallery" data-stellar-offset-parent="true">
+              <div class="row">
+                <div class="col-md-4 project-image image--right image--portrait image--sm" data-stellar-ratio="0.5">
+                  <a href="">
+                    <img src="images/PDN03.JPG" alt="">
+                    <p>Project Name</p>
+                  </a>
+                </div>
+              </div><!-- image right portrait small -->
+              <div class="row">
+                <div class="col-md-5 project-image image--left image--portrait image--md" data-stellar-ratio="2.5">
+                  <a href="">
+                    <img src="images/PDN08.JPG" alt="">
+                    <p>Project Name</p>
+                  </a>
+                </div>
+              </div><!-- image left portrait medium-->
+              <div class="row">
+                <div class="col-md-8 project-image image--right image--landscape image--lg" data-stellar-ratio="1">
+                  <a href="">
+                    <img src="images/PDN02.JPG" alt="">
+                    <p>Project Name</p>
+                  </a>
+                </div>
+              </div><!-- image right landscape lg-->
             </div>
           </div>
-        </section><!-- image right portrait small -->
-        <section class="container-fluid page-container">
-          <div class="row">
-            <div class="col-md-5 project-image image--left image--portrait image--md" data-stellar-ratio="2.5">
-                <a href=""><img src="images/PDN08.JPG" alt=""></a>
-            </div>
-          </div>
-        </section><!-- image left portrait medium-->
-        <section class="container-fluid page-container">
-          <div class="row">
-            <div class="col-md-8 project-image image--right image--landscape image--lg" data-stellar-ratio="1">
-                <a href=""><img src="images/PDN02.JPG" alt=""></a>
-            </div>
-          </div>
-        </section><!-- image right landscape lg-->
+        </div>
       </div>
     </main>
 
@@ -90,7 +99,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-
     <script language="javascript">
 
     (function(){
@@ -106,7 +114,7 @@
               scrollProperty: 'transform',
               positionProperty: 'transform',
               verticalOffset: -100,
-              hideDistantElements: false,
+              hideDistantElements: false
             });
             
             //Prevent text selection
@@ -122,7 +130,7 @@
               horizontalScrolling: false,
               positionProperty: 'transform',
               responsive: false,
-              hideDistantElements: false,
+              hideDistantElements: false
             });
           });
 

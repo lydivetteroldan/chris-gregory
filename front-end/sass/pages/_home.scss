@@ -1,31 +1,26 @@
-//Normal styles for mobile and tablet
-@media (max-width: 991px) {
-  .front-gallery img:not(last-child) {
-    #{$mb}: 2em;
-  }
+.front-gallery img {
+  #{$w}: 100%;
+}
 
-  .front-gallery .project-image {
-    #{$pos}: initial;
-  }
+.front-gallery {
+  @include expander;
+  #{$pos}: $rel;
+  #{$maxw}: 100%;
+}
+
+.front-gallery .project-image {
+  @include expander;
 }
 
 
 //Stellar for desktop
 @media (min-width: 992px) {
   .front-gallery {
-    @include expander;
-    #{$pos}: $rel;
-    // #{$maxw}: 1170px;
     #{$minh}: 3000px;
-    margin: 0 auto;
-    
-    img {
-      #{$w}: 100%;
-    }
   }
 
   .front-gallery .project-image {
-    #{$minh}: 320px;
+    
     #{$pos}: $abs;
     z-index: 2;
   }
@@ -37,7 +32,7 @@
   }
 
   .image--right.image--portrait.image--sm {
-    #{$t}: 0;
+    #{$t}: 5em;
     #{$r}: 8em;
   }
 
@@ -54,5 +49,13 @@
     p {
       #{$cl}: $black;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .project-image {
+    position: initial!important;
+    transform: none!important;
+    #{$mb}: 1.5em;
   }
 }
