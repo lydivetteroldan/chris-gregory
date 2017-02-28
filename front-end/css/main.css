@@ -151,7 +151,6 @@ img {
     height: auto;
     overflow: hidden;
     position: relative;
-    max-width: 1170px;
     min-height: 3000px;
     margin: 0 auto; }
     .front-gallery img {
@@ -169,11 +168,11 @@ img {
 
   .image--right.image--portrait.image--sm {
     top: 0;
-    right: 60px; }
+    right: 8em; }
 
   .image--right.image--landscape.image--lg {
     right: 4em;
-    top: 40em; }
+    top: 85vh; }
 
   .project-image p {
     color: transparent; }

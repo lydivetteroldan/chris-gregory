@@ -15,7 +15,7 @@
   .front-gallery {
     @include expander;
     #{$pos}: $rel;
-    #{$maxw}: 1170px;
+    // #{$maxw}: 1170px;
     #{$minh}: 3000px;
     margin: 0 auto;
     
@@ -38,12 +38,12 @@
 
   .image--right.image--portrait.image--sm {
     #{$t}: 0;
-    #{$r}: 60px;
+    #{$r}: 8em;
   }
 
   .image--right.image--landscape.image--lg {
     #{$r}: 4em;
-    #{$t}: 40em;
+    #{$t}: 85vh;
   } 
 
   .project-image p {
