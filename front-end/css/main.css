@@ -14,13 +14,16 @@
   font-family: "HaasThin";
   font-weight: eot woff ttf svg;
   src: url("../fonts/HaasGrotThin/HaasGrot-Thin.eot?") format("eot"), url("../fonts/HaasGrotThin/HaasGrot-Thin.woff2") format("woff2"), url("../fonts/HaasGrotThin/HaasGrot-Thin.woff") format("woff"), url("../fonts/HaasGrotThin/HaasGrot-Thin.ttf") format("truetype"), url("../fonts/HaasGrotThin/HaasGrot-Thin.svg#HaasThin") format("svg"); }
-html {
-  position: relative;
-  min-height: 100%; }
+html,
+body {
+  min-height: 100%;
+  position: relative; }
 
 body {
   font-family: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
-  padding-top: 70px; }
+  padding-top: 70px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 a, li > a {
   color: #222222; }
@@ -35,7 +38,7 @@ a, li > a {
 
 @media (min-width: 992px) {
   .page-container {
-    padding: 2em 2.5em; }
+    padding: 2em 2.5em 0; }
 
   .page-navbar .page-container {
     padding: 0.5em 2.5em; }
@@ -141,7 +144,8 @@ img {
   .page-footer-nav {
     text-align: left; } }
 .front-gallery img {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .front-gallery {
   height: auto;
@@ -154,30 +158,44 @@ img {
   overflow: hidden; }
 
 @media (min-width: 992px) {
-  .front-gallery {
-    min-height: 3000px; }
-
   .front-gallery .project-image {
-    position: absolute;
+    min-height: 300px;
+    position: relative;
+    z-index: 1; }
+    .front-gallery .project-image.image--right {
+      clear: both;
+      float: right; }
+
+  .project-image.z2 {
     z-index: 2; }
+  .project-image.z3 {
+    z-index: 3; }
+  .project-image.z4 {
+    z-index: 4; }
 
   .image--left.image--portrait.image--md {
-    top: 15em;
-    left: 4em;
-    z-index: 3; }
+    margin-top: -35em;
+    left: 4em; }
+
+  .image--left.image--landscape.image--md,
+  .image--right.image--landscape.image--lg,
+  .image--right.image--portrait.image--lg {
+    top: -4em; }
+
+  .image--left.image--landscape.image--lg {
+    top: -5em; }
 
   .image--right.image--portrait.image--sm {
-    top: 5em;
-    right: 8em; }
+    top: 4em;
+    right: 4em; }
 
-  .image--right.image--landscape.image--lg {
-    right: 4em;
-    top: 85vh; }
+  .image--right.image--landscape.image--md {
+    margin-top: -5em; }
 
   .project-image p {
     color: transparent; }
 
-  .project-image a:hover p {
+  .project-image:hover p {
     color: #222222; } }
 @media (min-width: 320px) and (max-width: 991px) {
   .project-image {

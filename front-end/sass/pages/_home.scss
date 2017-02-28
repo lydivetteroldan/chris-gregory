@@ -1,5 +1,5 @@
 .front-gallery img {
-  #{$w}: 100%;
+  @include responsive-img;
 }
 
 .front-gallery {
@@ -15,43 +15,66 @@
 
 //Stellar for desktop
 @media (min-width: 992px) {
-  .front-gallery {
-    #{$minh}: 3000px;
-  }
 
   .front-gallery .project-image {
-    
-    #{$pos}: $abs;
-    z-index: 2;
+    #{$minh}: 300px;
+    #{$pos}: $rel;
+    z-index: 1;
+
+    &.image--right {
+      clear: both;
+      float: #{$r};
+    }
+  }
+
+  .project-image {
+    &.z2 {
+      z-index: 2;
+    }
+    &.z3 {
+      z-index: 3;
+    }
+    &.z4 {
+      z-index: 4;
+    }
   }
 
   .image--left.image--portrait.image--md {
-    #{$t}: 15em;
+    #{$mt}: -35em;
     #{$l}: 4em;
-    z-index: 3;
+  }
+
+  .image--left.image--landscape.image--md,
+  .image--right.image--landscape.image--lg,
+  .image--right.image--portrait.image--lg {
+    #{$t}: -4em;
+  }
+
+  .image--left.image--landscape.image--lg {
+    #{$t}: -5em;
   }
 
   .image--right.image--portrait.image--sm {
-    #{$t}: 5em;
-    #{$r}: 8em;
+    #{$t}: 4em;
+    #{$r}: 4em;
   }
 
-  .image--right.image--landscape.image--lg {
-    #{$r}: 4em;
-    #{$t}: 85vh;
-  } 
+  .image--right.image--landscape.image--md {
+    #{$mt}: -5em;
+  }
 
   .project-image p {
     #{$cl}: transparent;
   }
 
-  .project-image a:hover {
+  .project-image:hover {
     p {
       #{$cl}: $black;
     }
   }
 }
 
+//Override Stellar mobile
 @media (min-width: 320px) and (max-width: 991px) {
   .project-image {
     position: initial!important;
