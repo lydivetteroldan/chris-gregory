@@ -68,9 +68,8 @@ function chris_gregory_setup() {
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
-	// Add theme support for Post Formats
-	add_theme_support( 'post-formats', array( 'gallery', 'image' ) );
-	
+	add_theme_support('post-formats', array( 'gallery', 'image' ) );
+}
 endif;
 add_action( 'after_setup_theme', 'chris_gregory_setup' );
 
