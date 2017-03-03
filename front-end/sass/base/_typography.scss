@@ -1,30 +1,21 @@
-.layout--2col p {
-  #{$fsz}: 20px;
+.layout--2col p,
+.layout--2col .page-list a {
+  #{$fsz}: 21px;
 }
 
 .page {
   &-footer,
   &-footer .page-container {
-    #{$fsz}: 12px;
+    #{$fsz}: 13px;
+  }
+
+  &-navbar-list,
+  &-navbar-list a {
+    #{$fsz}: 21px; 
   }
 
   &-title {
-    #{$fsz}: 21px;
-  }
-}
-
-@media (max-width: 767px) {
-  .page {
-    &-container,
-    &-container--2col p,
-    &-title,
-    &-title.page-link {
-      #{$fsz}: 16px;
-    }
-  }
-
-  .layout--2col .page-link {
-    #{$fsz}: 14px;
+    #{$fsz}: 28px;
   }
 }
 
@@ -50,12 +41,30 @@
   }
 }
 
-.project-pagination-next,
-.project-pagination-prev {
-  #{$fsz}: 1em;
-}
-
 @media (max-width: 767px) {
+  .page {
+    &-container,
+    &-title {
+      #{$fsz}: 16px;
+    }
+  }
+
+  .layout--2col {
+    p {
+      #{$fsz}: 16px;
+    } 
+
+    .page-list a {
+      #{$fsz}: 14px; 
+    }
+  }
+
+  .page-navbar-list,
+  .page-navbar-list a {
+    #{$fsz}: 14px; 
+  }
+
+
   .project {
     &-header-no,
     &-text,
@@ -71,4 +80,9 @@
       #{$fsz}: 18px;
     }
   }
+}
+
+.project-pagination-next,
+.project-pagination-prev {
+  #{$fsz}: 1em;
 }

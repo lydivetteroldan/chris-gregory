@@ -1,0 +1,9 @@
+body.page-about {
+  .main {
+    #{$pt}: 0;
+  }
+  
+  .navbar-fixed-top {
+    #{$pos}: initial;
+  }
+}

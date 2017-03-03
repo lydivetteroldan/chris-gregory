@@ -1,10 +1,14 @@
 
 @media (min-width: 991px) {
+  .layout--2col p {
+    #{$mb}: 2em;
+  }
+
   .layout--2col .page-list {
     #{$fl}: $r;
   }
 
-  .layout--2col .page-list>li:not(last-child) {
+  .layout--2col .page-list li:not(last-child) {
     #{$mb}: 25px;
   }
 

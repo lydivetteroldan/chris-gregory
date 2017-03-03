@@ -3,22 +3,23 @@
 @include font-face(HaasRoman, '../fonts/HaasGrotRoman/HaasGrot-Roman', eot woff ttf svg);
 @include font-face(HaasThin, '../fonts/HaasGrotThin/HaasGrot-Thin', eot woff ttf svg);
 
-html,
-body {
+html {
   #{$minh}: 100%;
   #{$pos}: $rel;
 }
 
 body {
   #{$ff}: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
-  #{$pt}: 70px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  #{$mb}: 40px;
 }
 
 a, li>a {
   @include link-primary;
   @include color-primary;
+}
+
+.main {
+  #{$pt}: 2em;
 }
 
 .page-container {
@@ -31,7 +32,7 @@ a, li>a {
   }
 
   .page-navbar .page-container {
-    #{$p}: 0.5em 2.5em;
+    #{$p}: 1em 2.5em;
   }
   
   .page-footer .page-container {

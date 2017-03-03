@@ -14,16 +14,13 @@
   font-family: "HaasThin";
   font-weight: eot woff ttf svg;
   src: url("../fonts/HaasGrotThin/HaasGrot-Thin.eot?") format("eot"), url("../fonts/HaasGrotThin/HaasGrot-Thin.woff2") format("woff2"), url("../fonts/HaasGrotThin/HaasGrot-Thin.woff") format("woff"), url("../fonts/HaasGrotThin/HaasGrot-Thin.ttf") format("truetype"), url("../fonts/HaasGrotThin/HaasGrot-Thin.svg#HaasThin") format("svg"); }
-html,
-body {
+html {
   min-height: 100%;
   position: relative; }
 
 body {
   font-family: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
-  padding-top: 70px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  margin-bottom: 40px; }
 
 a, li > a {
   color: #222222; }
@@ -33,6 +30,9 @@ a, li > a {
   a:active, a:hover, a:focus, li > a:active, li > a:hover, li > a:focus {
     color: #888888; }
 
+.main {
+  padding-top: 2em; }
+
 .page-container {
   padding: 1em 1.5em; }
 
@@ -41,7 +41,7 @@ a, li > a {
     padding: 2em 2.5em 0; }
 
   .page-navbar .page-container {
-    padding: 0.5em 2.5em; }
+    padding: 1em 2.5em; }
 
   .page-footer .page-container {
     padding: 0 2.5em 2em; } }
@@ -52,20 +52,17 @@ img {
   height: auto;
   overflow: hidden; }
 
-.layout--2col p {
-  font-size: 20px; }
-
-.page-footer, .page-footer .page-container {
-  font-size: 12px; }
-.page-title {
+.layout--2col p,
+.layout--2col .page-list a {
   font-size: 21px; }
 
-@media (max-width: 767px) {
-  .page-container, .page-container--2col p, .page-title, .page-title.page-link {
-    font-size: 16px; }
+.page-footer, .page-footer .page-container {
+  font-size: 13px; }
+.page-navbar-list, .page-navbar-list a {
+  font-size: 21px; }
+.page-title {
+  font-size: 28px; }
 
-  .layout--2col .page-link {
-    font-size: 14px; } }
 .project-date {
   font-size: 13px; }
 .project-header-no, .project-text, .project-text p {
@@ -77,17 +74,29 @@ img {
   letter-spacing: 1px;
   margin-bottom: 0.5em; }
 
-.project-pagination-next,
-.project-pagination-prev {
-  font-size: 1em; }
-
 @media (max-width: 767px) {
+  .page-container, .page-title {
+    font-size: 16px; }
+
+  .layout--2col p {
+    font-size: 16px; }
+  .layout--2col .page-list a {
+    font-size: 14px; }
+
+  .page-navbar-list,
+  .page-navbar-list a {
+    font-size: 14px; }
+
   .project-header-no, .project-text, .project-text p {
     font-size: 16px; }
   .project-pagination {
     font-size: 11px; }
   .project-title {
     font-size: 18px; } }
+.project-pagination-next,
+.project-pagination-prev {
+  font-size: 1em; }
+
 .nav > li > a, .nav > li > a:active, .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
   text-decoration: none; }
@@ -98,10 +107,13 @@ img {
   margin-left: 0.3em; }
 
 @media (min-width: 991px) {
+  .layout--2col p {
+    margin-bottom: 2em; }
+
   .layout--2col .page-list {
     float: right; }
 
-  .layout--2col .page-list > li:not(last-child) {
+  .layout--2col .page-list li:not(last-child) {
     margin-bottom: 25px; }
 
   .layout--3col .page-row {
@@ -192,6 +204,11 @@ img {
     position: initial !important;
     transform: none !important;
     margin-bottom: 1.5em; } }
+body.page-about .main {
+  padding-top: 0; }
+body.page-about .navbar-fixed-top {
+  position: initial; }
+
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;
