@@ -67,7 +67,10 @@ function chris_gregory_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-}
+
+	// Add theme support for Post Formats
+	add_theme_support( 'post-formats', array( 'gallery', 'image' ) );
+	
 endif;
 add_action( 'after_setup_theme', 'chris_gregory_setup' );
 
@@ -105,7 +108,15 @@ add_action( 'widgets_init', 'chris_gregory_widgets_init' );
  * Enqueue scripts and styles.
  */
 function chris_gregory_scripts() {
+ 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
+
 	wp_enqueue_style( 'chris-gregory-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '//code.jquery.com/jquery-3.1.1.min.js');
+
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', true );
+
+	wp_enqueue_script( 'plugins-js', get_template_directory_uri() . '/js/plugins.js', true );
 
 	wp_enqueue_script( 'chris-gregory-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
