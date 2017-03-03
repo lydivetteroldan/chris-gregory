@@ -11,7 +11,7 @@
 
 ?>
 
-  <footer class="page-footer" id="colophon" role="contentinfo">
+  <footer class="page-footer footer--sticky" id="colophon" role="contentinfo">
     <div class="container-fluid page-container">
       <div class="row">
         <div class="col-sm-6 col-md-6">
