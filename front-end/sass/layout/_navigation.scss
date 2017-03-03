@@ -2,11 +2,6 @@
   @include link-primary;
 }
 
-.page-link {
- @include link-primary;
- @include color-primary;
-}
-
 .project-pagination {
   &-next,
   &-prev {

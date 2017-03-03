@@ -55,15 +55,13 @@ img {
 .layout--2col p {
   font-size: 20px; }
 
-.page-footer, .page-footer .page-container, .page-footer .page-link {
+.page-footer, .page-footer .page-container {
   font-size: 12px; }
-.page-link {
-  font-size: 18px; }
-.page-title, .page-title.page-link {
+.page-title {
   font-size: 21px; }
 
 @media (max-width: 767px) {
-  .page-container, .page-container--2col p, .page-link, .page-title, .page-title.page-link {
+  .page-container, .page-container--2col p, .page-title, .page-title.page-link {
     font-size: 16px; }
 
   .layout--2col .page-link {
@@ -72,7 +70,7 @@ img {
   font-size: 13px; }
 .project-header-no, .project-text, .project-text p {
   font-size: 18px; }
-.project-pagination, .project-pagination .page-link {
+.project-pagination {
   font-size: 14px; }
 .project-title {
   font-size: 21px;
@@ -86,7 +84,7 @@ img {
 @media (max-width: 767px) {
   .project-header-no, .project-text, .project-text p {
     font-size: 16px; }
-  .project-pagination, .project-pagination .page-link {
+  .project-pagination {
     font-size: 11px; }
   .project-title {
     font-size: 18px; } }
@@ -95,14 +93,6 @@ img {
   text-decoration: none; }
 .nav > li > a:active, .nav > li > a:hover, .nav > li > a:focus {
   color: #888888; }
-
-.page-link {
-  color: #222222; }
-  .page-link, .page-link:active, .page-link:hover, .page-link:focus {
-    background-color: transparent;
-    text-decoration: none; }
-  .page-link:active, .page-link:hover, .page-link:focus {
-    color: #888888; }
 
 .project-pagination-next, .project-pagination-prev {
   margin-left: 0.3em; }

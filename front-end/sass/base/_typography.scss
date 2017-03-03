@@ -4,17 +4,11 @@
 
 .page {
   &-footer,
-  &-footer .page-container,
-  &-footer .page-link {
+  &-footer .page-container {
     #{$fsz}: 12px;
   }
 
-  &-link {
-    #{$fsz}: 18px;
-  }
-
-  &-title,
-  &-title.page-link {
+  &-title {
     #{$fsz}: 21px;
   }
 }
@@ -23,7 +17,6 @@
   .page {
     &-container,
     &-container--2col p,
-    &-link,
     &-title,
     &-title.page-link {
       #{$fsz}: 16px;
@@ -46,8 +39,7 @@
     #{$fsz}: 18px;
   }
   
-  &-pagination,
-  &-pagination .page-link {
+  &-pagination {
     #{$fsz}: 14px;
   }
 
@@ -71,8 +63,7 @@
       #{$fsz}: 16px;
     }
 
-    &-pagination,
-    &-pagination .page-link {
+    &-pagination {
       #{$fsz}: 11px;
     }
 
