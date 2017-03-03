@@ -107,7 +107,7 @@ add_action( 'widgets_init', 'chris_gregory_widgets_init' );
  * Enqueue scripts and styles.
  */
 function chris_gregory_scripts() {
- 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
+ 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap/bootstrap.min.css');
 
 	wp_enqueue_style( 'chris-gregory-style', get_stylesheet_uri() );
 
