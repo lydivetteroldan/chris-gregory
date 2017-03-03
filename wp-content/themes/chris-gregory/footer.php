@@ -11,16 +11,22 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'chris-gregory' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'chris-gregory' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'chris-gregory' ), 'chris-gregory', '<a href="https://automattic.com/" rel="designer">Lydivette Roldán</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+  <footer class="page-footer" id="colophon" role="contentinfo">
+    <div class="container-fluid page-container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <p>All work © Chris Gregory 2017</p>
+        </div>
+        <div class="col-sm-6 col-md-6 page-footer-nav">
+          <ul class="list-inline">
+            <li><a href="mailto:chris@chrisgregoryphoto.co">chris@chrisgregoryphoto.co</a></li>
+            <li><span>|</span></li>
+            <li><a href="tel:7872429215">787-242-9215</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 <?php wp_footer(); ?>
 
