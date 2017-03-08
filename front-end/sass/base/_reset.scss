@@ -11,6 +11,16 @@ html {
 body {
   #{$ff}: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
   #{$mb}: 40px;
+  &.page-about,
+  &.page-projects {
+    .main {
+      #{$pt}: 0;
+    }
+
+    .navbar-fixed-top {
+      #{$pos}: initial;
+    }
+  }
 }
 
 a, li>a {
@@ -36,7 +46,7 @@ a, li>a {
   }
   
   .page-footer .page-container {
-    #{$p}: 0 2.5em 2em;
+    #{$p}: 0 2.5em 1em;
   }
 }
 
