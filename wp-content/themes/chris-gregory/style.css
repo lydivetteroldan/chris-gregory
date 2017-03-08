@@ -21,6 +21,10 @@ html {
 body {
   font-family: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
   margin-bottom: 40px; }
+  body.page-about .main, body.page-projects .main {
+    padding-top: 0; }
+  body.page-about .navbar-fixed-top, body.page-projects .navbar-fixed-top {
+    position: initial; }
 
 a, li > a {
   color: #222222; }
@@ -44,7 +48,7 @@ a, li > a {
     padding: 1em 2.5em; }
 
   .page-footer .page-container {
-    padding: 0 2.5em 2em; } }
+    padding: 0 2.5em 1em; } }
 img {
   height: auto; }
 
@@ -204,11 +208,6 @@ img {
     position: initial !important;
     transform: none !important;
     margin-bottom: 1.5em; } }
-body.page-about .main {
-  padding-top: 0; }
-body.page-about .navbar-fixed-top {
-  position: initial; }
-
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;
