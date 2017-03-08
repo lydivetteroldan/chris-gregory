@@ -14,9 +14,9 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside class="col-md-3 col-md-offset-1" id="secondary" role="complementary">
   <ul class="list-unstyled page-list">
-    <li><a class="page-link" href="mailto:chris@chrisgregoryphoto.co" target="_blank">chris@chrisgregoryphoto.co</a></li>
-    <li><a class="page-link" href="tel:7872429215" target="_blank">787-242-9215</a></li>
-    <li><a class="page-link" href="https://instagram.com/chrisgregoryphoto" target="_blank">Instagram</a></li>
-    <li><a class="page-link" href="https://facebook.com" target="_blank">Facebook</a></li>
+    <li><a href="mailto:chris@chrisgregoryphoto.co" target="_blank">chris@chrisgregoryphoto.co</a></li>
+    <li><a href="tel:7872429215" target="_blank">787-242-9215</a></li>
+    <li><a href="https://instagram.com/chrisgregoryphoto" target="_blank">Instagram</a></li>
+    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
   </ul>
 </aside><!-- #secondary -->
