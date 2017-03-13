@@ -16,7 +16,7 @@ get_header(); ?>
 					<div class="page-row">
 						<?php
 						global $post;
-						$args = array( 'order'=> 'ASC', 'post_type' => 'owl-carousel', 'post_status' => 'publish' );
+						$args = array( 'order'=> 'ASC', 'post_type' => 'project', 'post_status' => 'publish' );
 						$postslist = get_posts( $args );
 						foreach ( $postslist as $post ) :
 						  setup_postdata( $post ); ?> 
