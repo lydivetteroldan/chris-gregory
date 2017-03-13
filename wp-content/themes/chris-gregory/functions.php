@@ -135,7 +135,7 @@ function replace_jquery() {
 		wp_enqueue_script('jquery');
 	}
 }
-add_action('init', 'replace_jquery');
+add_action('wp_enqueue_scripts', 'replace_jquery');
 
 /**
  * Implement the Custom Header feature.
