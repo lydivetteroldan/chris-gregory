@@ -29,6 +29,71 @@
   </footer>
 
 <?php wp_footer(); ?>
+<script language="javascript">
+
+    (function(){
+      var ua = navigator.userAgent,
+        isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
+        
+      $(function(){
+
+        if (isMobileWebkit) {
+          $(function(){
+            $('#main').stellar({
+              horizontalScrolling: false,
+              scrollProperty: 'transform',
+              positionProperty: 'transform',
+              verticalOffset: -100,
+              hideDistantElements: false
+            });
+            
+            //Prevent text selection
+            $(document).mousedown(function(e){
+              e.preventDefault();
+            });
+          });
+
+        } else {
+          $(window).load(function(){
+            $(window).stellar({
+              parallaxBackgrounds: false,
+              horizontalScrolling: false,
+              positionProperty: 'transform',
+              responsive: false,
+              hideDistantElements: false
+            });
+          });
+
+          $(function(){
+  
+              var $window = $(window);
+          
+              var scrollTime = 1;
+              var scrollDistance = 320;
+              $window.on("mousewheel DOMMouseScroll", function(event){
+          
+                  event.preventDefault(); 
+          
+                  var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+                  var scrollTop = $window.scrollTop();
+                  var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+          
+                  TweenMax.to($window, scrollTime, {
+                      scrollTo : { y: finalScroll, autoKill:true },
+                          ease: Power1.easeOut,   //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
+                          autoKill: true,
+                          overwrite: 5                            
+                      });
+          
+              });
+          
+          });
+
+        }
+      });
+
+    })();
+  </script>
 
 </body>
 </html>
