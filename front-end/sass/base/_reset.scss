@@ -29,7 +29,8 @@ a, li>a {
 }
 
 .main {
-  #{$pt}: 2em;
+  #{$pos}: $rel;
+  #{$t}: 4em;
 }
 
 .page-container {

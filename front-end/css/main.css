@@ -35,7 +35,8 @@ a, li > a {
     color: #888888; }
 
 .main {
-  padding-top: 2em; }
+  position: relative;
+  top: 4em; }
 
 .page-container {
   padding: 1em 1.5em; }
@@ -156,7 +157,6 @@ img {
 .front-gallery {
   height: auto;
   overflow: hidden;
-  position: relative;
   max-width: 100%; }
 
 .front-gallery .project-image {
@@ -172,6 +172,8 @@ img {
       clear: both;
       float: right; }
 
+  .project-image.offset--top {
+    margin-top: -35em; }
   .project-image.z2 {
     z-index: 2; }
   .project-image.z3 {
@@ -180,7 +182,6 @@ img {
     z-index: 4; }
 
   .image--left.image--portrait.image--md {
-    margin-top: -35em;
     left: 4em; }
 
   .image--left.image--landscape.image--md,

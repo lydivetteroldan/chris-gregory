@@ -4,7 +4,6 @@
 
 .front-gallery {
   @include expander;
-  #{$pos}: $rel;
   #{$maxw}: 100%;
 }
 
@@ -28,6 +27,10 @@
   }
 
   .project-image {
+    &.offset--top {
+      #{$mt}: -35em;
+    }
+    
     &.z2 {
       z-index: 2;
     }
@@ -40,7 +43,6 @@
   }
 
   .image--left.image--portrait.image--md {
-    #{$mt}: -35em;
     #{$l}: 4em;
   }
 
