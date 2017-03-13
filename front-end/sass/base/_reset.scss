@@ -15,6 +15,7 @@ body {
   &.page-projects {
     .main {
       #{$pt}: 0;
+      #{$t}: 0;
     }
 
     .navbar-fixed-top {

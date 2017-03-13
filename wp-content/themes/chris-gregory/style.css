@@ -22,7 +22,8 @@ body {
   font-family: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
   margin-bottom: 40px; }
   body.page-about .main, body.page-projects .main {
-    padding-top: 0; }
+    padding-top: 0;
+    top: 0; }
   body.page-about .navbar-fixed-top, body.page-projects .navbar-fixed-top {
     position: initial; }
 
