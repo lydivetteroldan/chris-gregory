@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <nav class="navbar navbar-fixed-top page-navbar" role="navigation" style="top: 20px;">
+  <nav class="navbar navbar-fixed-top page-navbar" role="navigation">
     <div class="container-fluid page-container">
       <div class="hidden-xs">
         <div class="navbar-header">
