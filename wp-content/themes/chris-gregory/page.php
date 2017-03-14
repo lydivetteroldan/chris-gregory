@@ -14,21 +14,17 @@
 
 get_header(); ?>
 
-	<div class="content-area" id="primary">
-		<main class="main" id="main" role="main">
-			<div class="container-fluid page-container">
-				<?php
-				while ( have_posts() ) : the_post();
+	<div class="container-fluid page-container">
+		<?php
+		while ( have_posts() ) : the_post();
 
-					get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', 'page' );
 
-					endif;
+			endif;
 
-				endwhile; // End of the loop.
-				?>
-			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		endwhile; // End of the loop.
+		?>
+	</div>
 
 <?php
 get_footer();
