@@ -36,8 +36,7 @@ a, li > a {
     color: #888888; }
 
 .main {
-  position: relative;
-  top: 4em; }
+  margin-top: 4em; }
 
 .page-container {
   padding: 1em 1.5em; }
