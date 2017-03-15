@@ -12,13 +12,19 @@ get_header(); ?>
 	<div class="container page-container layout--3col">
 		<div class="row">
 			<div class="page-row">
+				<?php wp_nav_menu( array(
+			    'menu'           => 'Projects Menu'
+				) );
+				?>
+			</div>
+			<div class="page-row grid">
 				<?php
 				global $post;
 				$args = array( 'order'=> 'ASC', 'post_type' => 'project', 'post_status' => 'publish' );
 				$postslist = get_posts( $args );
 				foreach ( $postslist as $post ) :
 				  setup_postdata( $post ); ?> 
-					<div class="col-sm-4 col-md-4">
+					<div class="col-md-4 grid-item">
 						<div class="page-thumbnail">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail() ?>

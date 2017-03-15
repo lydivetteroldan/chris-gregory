@@ -22,7 +22,7 @@ body {
   font-family: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
   margin-bottom: 40px; }
   body.page-about .main, body.page-projects .main {
-    padding-top: 0;
+    margin-top: 0;
     top: 0; }
   body.page-about .navbar-fixed-top, body.page-projects .navbar-fixed-top {
     position: initial; }
@@ -209,6 +209,13 @@ img {
     position: initial !important;
     transform: none !important;
     margin-bottom: 1.5em; } }
+@media (min-width: 991px) {
+  .page-projects .page-thumbnail {
+    display: flex;
+    align-items: flex-end;
+    height: 545px; }
+  .page-projects .page-caption {
+    display: block; } }
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;

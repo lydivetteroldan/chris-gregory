@@ -1,3 +1,16 @@
+@media (min-width: 991px) {
+  .page-projects {
+    .page-thumbnail {
+      display: flex;
+      align-items: flex-end;
+      #{$h}: 545px;
+    }
+    .page-caption {
+      display: block;
+    }
+  }
+}
+
 .page-thumbnail img,
 .project-content .project-image img {
   @include responsive-img;
