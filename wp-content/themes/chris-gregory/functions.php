@@ -116,6 +116,8 @@ function chris_gregory_scripts() {
 
 	wp_enqueue_script( 'plugins-js', get_template_directory_uri() . '/js/plugins.js', '', '', true );
 
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', '', '', true );
+
 	// wp_enqueue_script( 'chris-gregory-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	// wp_enqueue_script( 'chris-gregory-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

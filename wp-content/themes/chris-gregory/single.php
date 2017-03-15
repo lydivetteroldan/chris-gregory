@@ -10,13 +10,15 @@
 get_header(); ?>
 
 	<div class="container page-container">
-		<div class="row">
+		<div class="row page-row">
 			<div class="col-md-12">
-				<?php
-				while ( have_posts() ) : the_post();
-					get_template_part( 'template-parts/content', get_post_format() );
-				endwhile; // End of the loop.
-				?>
+				<div class="row">
+					<?php
+					while ( have_posts() ) : the_post();
+						get_template_part( 'template-parts/content', get_post_format() );
+					endwhile; // End of the loop.
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
