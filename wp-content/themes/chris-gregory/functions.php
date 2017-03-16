@@ -108,12 +108,31 @@ add_action( 'widgets_init', 'chris_gregory_widgets_init' );
  * Enqueue scripts and styles.
  */
 
+//Making jQuery to load from Google Library
+function replace_jquery() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', false, '1.11.3');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('wp_enqueue_scripts', 'replace_jquery');
+
 function chris_gregory_scripts() {
  	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap/bootstrap.min.css');
 
 	wp_enqueue_style( 'chris-gregory-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', '', '', true );
+	// wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', '', '', true );
+
+	// wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/js/jquery.min.js', '', '', true );
+
+	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/js/isotope.min.js', '', '', true );
+
+	wp_enqueue_script( 'tweenmax', get_template_directory_uri() . '/js/TweenMax.min.js', '', '', true );
+
+	wp_enqueue_script( 'scrollto-min', get_template_directory_uri() . '/js/ScrollToPlugin.min.js', '', '', true );
 
 	wp_enqueue_script( 'plugins-js', get_template_directory_uri() . '/js/plugins.js', '', '', true );
 
@@ -128,17 +147,6 @@ function chris_gregory_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'chris_gregory_scripts' );
-
-//Making jQuery to load from Google Library
-function replace_jquery() {
-	if (!is_admin()) {
-		// comment out the next two lines to load the local copy of jQuery
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', false, '1.11.3');
-		wp_enqueue_script('jquery');
-	}
-}
-add_action('wp_enqueue_scripts', 'replace_jquery');
 
 /**
  * Implement the Custom Header feature.
