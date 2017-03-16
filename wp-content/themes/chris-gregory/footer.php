@@ -19,7 +19,7 @@
         </div>
         <div class="col-sm-6 col-md-6 page-footer-nav">
           <ul class="list-inline">
-            <li><a href="mailto:chris@chrisgregoryphoto.co">chris@chrisgregoryphoto.co</a></li>
+            <li><a href="mailto:chris@chrisgregoryphoto.com">chris@chrisgregoryphoto.com</a></li>
             <li><span>|</span></li>
             <li><a href="tel:7872429215">787-242-9215</a></li>
           </ul>
@@ -29,6 +29,71 @@
   </footer>
 
 <?php wp_footer(); ?>
+
+<script language="javascript">
+    (function(){
+      var ua = navigator.userAgent,
+        isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
+        
+      $(function(){
+
+        if (isMobileWebkit) {
+          $(function(){
+            $('#main').stellar({
+              horizontalScrolling: false,
+              scrollProperty: 'transform',
+              positionProperty: 'transform',
+              verticalOffset: -100,
+              hideDistantElements: false
+            });
+            
+            //Prevent text selection
+            $(document).mousedown(function(e){
+              e.preventDefault();
+            });
+          });
+
+        } else {
+          $(window).load(function(){
+            $(window).stellar({
+              parallaxBackgrounds: false,
+              horizontalScrolling: false,
+              positionProperty: 'transform',
+              responsive: false,
+              hideDistantElements: false
+            });
+          });
+
+          $(function(){
+  
+              var $window = $(window);
+          
+              var scrollTime = 1;
+              var scrollDistance = 320;
+              $window.on("mousewheel DOMMouseScroll", function(event){
+          
+                  event.preventDefault(); 
+          
+                  var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+                  var scrollTop = $window.scrollTop();
+                  var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+          
+                  TweenMax.to($window, scrollTime, {
+                      scrollTo : { y: finalScroll, autoKill:true },
+                          ease: Power1.easeOut,   //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
+                          autoKill: true,
+                          overwrite: 5                            
+                      });
+          
+              });
+          
+          });
+
+        }
+      });
+
+    })();
+ </script>
 
 </body>
 </html>
