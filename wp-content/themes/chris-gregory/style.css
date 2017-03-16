@@ -1,3 +1,43 @@
+/*
+Theme Name: Chris Gregory
+Theme URI: http://underscores.me/
+Author: Lydivette Roldán
+Author URI: https://github.com/lydivetteroldan
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: chris-gregory
+Tags: portfolio, photography, responsive
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Chris Gregory is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Font Face
+# Reset
+# Typography
+# Navigation
+  ## Links
+  ## Menus
+# Grid
+# Header
+# Footer
+# Content
+  ## Posts and pages
+  ### Home
+  ### Projects
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Font Face
+--------------------------------------------------------------*/
 @font-face {
   font-family: "HaasBlack";
   font-weight: eot woff ttf svg;
@@ -14,6 +54,10 @@
   font-family: "HaasThin";
   font-weight: eot woff ttf svg;
   src: url("../fonts/HaasGrotThin/HaasGrot-Thin.eot?") format("eot"), url("../fonts/HaasGrotThin/HaasGrot-Thin.woff2") format("woff2"), url("../fonts/HaasGrotThin/HaasGrot-Thin.woff") format("woff"), url("../fonts/HaasGrotThin/HaasGrot-Thin.ttf") format("truetype"), url("../fonts/HaasGrotThin/HaasGrot-Thin.svg#HaasThin") format("svg"); }
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
 html {
   min-height: 100%;
   position: relative; }
@@ -49,13 +93,23 @@ a, li > a {
     padding: 1em 2.5em; }
 
   .page-footer .page-container {
-    padding: 0 2.5em 1em; } }
+    padding: 0 2.5em 1em; }
+}
+
 img {
   height: auto; }
 
 .page-row {
   height: auto;
   overflow: hidden; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+a {
+  font-family: 'HaasBold', 'Roboto', sans-serif;
+}
 
 .layout--2col p,
 .layout--2col .page-list a {
@@ -97,10 +151,16 @@ img {
   .project-pagination {
     font-size: 11px; }
   .project-title {
-    font-size: 18px; } }
+    font-size: 18px; }
+}
+
 .project-pagination-next,
 .project-pagination-prev {
   font-size: 1em; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
 
 .nav > li > a, .nav > li > a:active, .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
@@ -110,6 +170,10 @@ img {
 
 .project-pagination-next, .project-pagination-prev {
   margin-left: 0.3em; }
+
+/*--------------------------------------------------------------
+# Grid
+--------------------------------------------------------------*/
 
 @media (min-width: 991px) {
   .layout--2col p {
@@ -122,7 +186,12 @@ img {
     margin-bottom: 25px; }
 
   .layout--3col .page-row {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 .page-navbar-list {
   padding: 15px;
   margin-bottom: 0;
@@ -133,7 +202,12 @@ img {
     padding-left: 0; }
 
   .page-navbar-list {
-    padding-right: 0; } }
+    padding-right: 0; }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .footer--sticky {
   position: absolute;
   bottom: 0;
@@ -145,11 +219,18 @@ img {
 
 @media (min-width: 768px) {
   .page-footer-nav {
-    text-align: right; } }
+    text-align: right; }
+}
+
 @media (max-width: 767px) {
   .footer--sticky,
   .page-footer-nav {
-    text-align: left; } }
+    text-align: left; }
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
 .front-gallery img {
   width: 100%;
   height: auto; }
@@ -203,19 +284,28 @@ img {
     color: transparent; }
 
   .project-image:hover p {
-    color: #222222; } }
+    color: #222222; }
+}
+
 @media (min-width: 320px) and (max-width: 991px) {
   .project-image {
     position: initial !important;
     transform: none !important;
-    margin-bottom: 1.5em; } }
+    margin-bottom: 1.5em; }
+}
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
 @media (min-width: 991px) {
   .page-projects .page-thumbnail {
     display: flex;
     align-items: flex-end;
     height: 545px; }
   .page-projects .page-caption {
-    display: block; } }
+    display: block; }
+}
+
 .page-thumbnail img,
 .project-content .project-image img {
   width: 100%;
@@ -242,16 +332,22 @@ img {
 
 @media (min-width: 768px) {
   .project-content p {
-    padding: 3em 3em 1.5em; } }
+    padding: 3em 3em 1.5em; }
+}
+
 .project-header-no {
   margin-top: 2em; }
 
 @media (min-width: 768px) {
   .layout--3col .page-row {
-    margin-bottom: 4em; } }
+    margin-bottom: 4em; }
+}
+
 @media (max-width: 767px) {
   .page-thumbnail-container {
-    margin-bottom: 4em; } }
+    margin-bottom: 4em; } 
+}
+
 .owl-carousel .owl-item img {
   max-width: 100%;
   max-height: 100%; }
@@ -260,4 +356,10 @@ img {
     margin-right: 2%; }
     .owl-carousel .owl-item img.alignleft:last-child, .owl-carousel .owl-item img.alignright:last-child {
       margin-right: 0; }
-.owl-carousel
+.owl-carousel .owl-item .item {
+  display: flex;
+  align-items: center;
+  height: 530px; }
+.owl-carousel .item:hover .owl-carousel-item-imgoverlay {
+  opacity: 0;
+  display: none; }
