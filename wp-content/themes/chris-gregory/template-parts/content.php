@@ -19,14 +19,24 @@
 	<div class="col-md-12">
 		<div class="row">
 			<div class="col-md-9 col-md-offset-2">
-				<div class="project-content">
-					<?php
-						the_content( sprintf(
-							/* translators: %s: Name of current post. */
-							wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'chris-gregory' ), array( 'span' => array( 'class' => array() ) ) ),
-							the_title( '<span class="screen-reader-text">"', '"</span>', false )
-						) );
-					?>
+				<div class="project">
+					<div class="project-header">
+						<h2 class="project-title text-uppercase">
+							<a href="<?php the_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</h2>
+						<h3 class="project-date"><?php the_excerpt(); ?></h3>
+					</div>
+					<div class="project-content">
+						<?php
+							the_content( sprintf(
+								/* translators: %s: Name of current post. */
+								wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'chris-gregory' ), array( 'span' => array( 'class' => array() ) ) ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							) );
+						?>
+					</div>
 				</div><!-- .entry-content -->
 			</div>
 		</div>
