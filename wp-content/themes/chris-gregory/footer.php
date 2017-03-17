@@ -11,6 +11,30 @@
 
 ?>
   </main><!-- /#main -->
+  <?php if ( is_single() ) {?>
+    <footer class="pagination-footer footer--sticky">
+    <div class="container-fluid page-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="page-prev">
+                <?php previous_post_link('%link'); ?>
+              </div>
+            </div>
+            <div class="col-md-6 text-right">
+              <div class="page-next">
+                <?php next_post_link('%link'); ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <?php } ?>
+  
+
   <footer class="page-footer footer--sticky" id="colophon" role="contentinfo">
     <div class="container-fluid page-container">
       <div class="row">
