@@ -95,6 +95,7 @@ a, li > a {
   margin-top: 4em;
   margin-bottom: 4em; }
 
+
 .page-container {
   padding: 1em 1.5em; }
 
@@ -107,6 +108,10 @@ a, li > a {
 
   .page-footer .page-container {
     padding: 0 2.5em 1em; }
+
+    .single .main {
+    margin-bottom: 10em;
+  }
 }
 
 img {
@@ -231,7 +236,7 @@ a.page-title,
   height: 30px; }
 
 .footer--sticky.pagination-footer {
-  bottom: 30px;
+  bottom: 40px;
   height: auto;
 }
 
@@ -241,6 +246,13 @@ a.page-title,
 @media (min-width: 768px) {
   .page-footer-nav {
     text-align: right; }
+}
+
+@media (max-width: 767px) {
+  .pagination-footer,
+  .pagination-footer a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -404,6 +416,12 @@ a.page-title,
   display: flex;
   align-items: center;
   height: 530px; }
+
+@media (max-width: 767px) {
+  .owl-carousel .owl-item .item {
+    height: 350px;
+  }
+}
 .owl-carousel .item:hover .owl-carousel-item-imgoverlay {
   opacity: 0;
   display: none; }
@@ -447,4 +465,17 @@ a.page-title,
   .owl-next {
     right: -3em;
   }
+}
+
+.overlay {
+  background-color: rgba(255,255,255, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  z-index: 2;
+}
+
+.page-thumbnail:hover .overlay {
+  display: block;
 }

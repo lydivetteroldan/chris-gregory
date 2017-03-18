@@ -8,7 +8,35 @@
  */
 
 get_header(); ?>
-
+	
+	<header class="header--projects">
+		<div class="container page-container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="list-inline menu--projects text-center">
+						<li class="col-xs-4 col-sm-4 col-md-2">
+							<a href="javascript:void(0)" data-filter="*">All Projects</a>
+						</li>
+						<li class="col-xs-4 col-sm-4 col-md-2">
+							<a href="javascript:void(0)" data-filter=".personal">Personal</a>
+						</li>
+						<li class="col-xs-4 col-sm-4 col-md-2">
+							<a href="javascript:void(0)" data-filter=".reportage">Reportage</a>
+						</li>
+						<li class="col-xs-4 col-sm-4 col-md-2">
+							<a href="javascript:void(0)" data-filter=".portraits">Portraits</a>
+						</li>
+						<li class="col-xs-4 col-sm-4 col-md-2">
+							<a href="javascript:void(0)" data-filter=".comission">Comission</a>
+						</li>
+						<li class="col-xs-4 col-sm-4 col-md-2">
+							<a href="javascript:void(0)" data-filter=".still-life">Still Life</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 	<div class="container page-container layout--3col">
 		<div class="row">
 			<div class="grid">
@@ -23,7 +51,7 @@ get_header(); ?>
 				$postslist = get_posts( $args );
 				foreach ( $postslist as $post ) :
 				  setup_postdata( $post ); ?> 
-					<div class="col-xs-12 col-sm-4 col-md-4 grid-item">
+					<div <?php post_class('col-xs-12 col-sm-4 col-md-4 grid-item'); ?>>
 						<div class="page-thumbnail">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail() ?>
