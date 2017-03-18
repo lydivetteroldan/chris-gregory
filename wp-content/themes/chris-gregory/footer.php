@@ -13,7 +13,7 @@
   </main><!-- /#main -->
   <?php if ( is_single() ) {?>
     <footer class="pagination-footer footer--sticky">
-    <div class="container-fluid page-container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="row">
