@@ -1,7 +1,7 @@
 /*
 Theme Name: Chris Gregory
 Theme URI: http://underscores.me/
-Author: Lydivette Roldán
+Author: Lydivette RoldÃ¡n
 Author URI: https://github.com/lydivetteroldan
 Description: Description
 Version: 1.0.0
@@ -103,6 +103,10 @@ a, li > a {
   .page-container {
     padding: 2em 2.5em 0; }
 
+  .main .page-container {
+    padding-top: 6em;
+  }
+
   .page-navbar .page-container {
     padding: 1em 2.5em; }
 
@@ -136,15 +140,37 @@ a.page-title,
   font-size: 21px; }
 
 .page-footer, .page-footer .page-container {
-  font-size: 13px; }
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 12px;
+  }
+
+.page-navbar-list .list-inline>li:not(:last-child) {
+  padding: 0 3em;
+}
+
+@media(max-width: 991px) {
+  .page-navbar-list .list-inline>li:not(:last-child) {
+    padding: 0 1em;
+  }
+}
+
 .page-navbar-list, .page-navbar-list a {
-  font-size: 21px; }
+  font-size: 18px;
+  letter-spacing: 0.47px;
+  line-height: 18px;
+  }
 .page-title {
-  font-size: 28px; }
+  font-size: 21px;
+  letter-spacing: 0.55px;
+  line-height: 20px;
+  }
 
 .front-gallery .project-title,
 .project-date {
-  font-size: 16px; }
+  font-size: 18px;
+  font-family: 'HaasRoman', 'Roboto';
+  }
 .project-header-no, .project-content, .project-content p {
   font-size: 18px; }
 .project-pagination {
@@ -264,12 +290,12 @@ a.page-title,
 }
 
 .pagination-footer .page-next a:after {
-  content: "⟶";
+  content: "âŸ¶";
   margin-left: 0.5em;
 }
 
 .pagination-footer .page-prev a:before {
-  content: "⟵";
+  content: "âŸµ";
   margin-right: 0.5em;
 }
 
@@ -442,11 +468,11 @@ a.page-title,
 }
 
 .owl-next:after {
-  content: "⟶";
+  content: "âŸ¶";
 }
 
 .owl-prev:before {
-  content: "⟵";
+  content: "âŸµ";
 }
 
 @media (min-width: 991px) {
