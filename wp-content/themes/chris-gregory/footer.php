@@ -45,7 +45,7 @@
           <ul class="list-inline">
             <li><a href="mailto:chris@chrisgregoryphoto.com">chris@chrisgregoryphoto.com</a></li>
             <li><span>|</span></li>
-            <li><a href="tel:7872429215">787-242-9215</a></li>
+            <li><a href="tel:7872429215">787.242.9215</a></li>
           </ul>
         </div>
       </div>
