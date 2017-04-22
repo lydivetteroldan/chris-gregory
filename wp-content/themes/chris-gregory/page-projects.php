@@ -51,7 +51,7 @@ get_header(); ?>
 				$postslist = get_posts( $args );
 				foreach ( $postslist as $post ) :
 				  setup_postdata( $post ); ?> 
-					<div <?php post_class('col-xs-12 col-sm-4 col-md-4 grid-item'); ?>>
+					<div <?php post_class('col-xs-12 col-sm-4 col-md-4 grid-item highlight'); ?>>
 						<div class="page-thumbnail">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail() ?>

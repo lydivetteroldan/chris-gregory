@@ -80,7 +80,7 @@ body {
   body.page-about .main, body.page-projects .main {
     margin-top: 0;
     top: 0; }
-  body.page-about .navbar-fixed-top, body.page-projects .navbar-fixed-top {
+  body.page-about .navbar-fixed-top {
     position: initial; }
 
 a, li > a {
@@ -129,19 +129,22 @@ img {
 # Typography
 --------------------------------------------------------------*/
 a.active,
+.page-navbar-list a.active,
 a.page-title,
 .page-projects .grid-item:hover .page-caption,
 .project-title {
   font-family: 'HaasBold', 'Roboto', sans-serif;
 }
 
+.home .page-navbar-list a.active,
 .front-gallery .project-title,
 .project-header .project-title {
   font-family: 'HaasRoman', 'Roboto', sans-serif;
 }
 
 .layout--2col p,
-.layout--2col .page-list a {
+.layout--2col .page-list a,
+.page-caption {
   letter-spacing: 0.5px; }
 
 
@@ -173,6 +176,7 @@ a.page-title,
   letter-spacing: 0.47px;
   line-height: 18px;
   }
+
 .page-title {
   font-size: 21px;
   letter-spacing: 0.55px;
