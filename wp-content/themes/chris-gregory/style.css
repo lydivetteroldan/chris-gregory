@@ -75,7 +75,7 @@ html {
   position: relative; }
 
 body {
-  font-family: 'HaasRoman', 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'HaasRoman', 'Roboto', sans-serif;
   margin-bottom: 40px; }
   body.page-about .main, body.page-projects .main {
     margin-top: 0;
@@ -130,14 +130,27 @@ img {
 --------------------------------------------------------------*/
 a.active,
 a.page-title,
-.page-projects .page-caption,
+.page-projects .grid-item:hover .page-caption,
 .project-title {
   font-family: 'HaasBold', 'Roboto', sans-serif;
 }
 
+.front-gallery .project-title,
+.project-header .project-title {
+  font-family: 'HaasRoman', 'Roboto', sans-serif;
+}
+
 .layout--2col p,
 .layout--2col .page-list a {
-  font-size: 21px; }
+  letter-spacing: 0.5px; }
+
+
+.layout--2col p {
+  font-size: 20px;
+}
+.layout--2col .page-list a {
+  font-size: 18px;
+}
 
 .page-footer, .page-footer .page-container {
   font-size: 12px;
@@ -166,18 +179,25 @@ a.page-title,
   line-height: 20px;
   }
 
-.front-gallery .project-title,
+.pagination-footer a {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.front-gallery .project-title {
+  font-size: 18px; 
+}
+
 .project-date {
-  font-size: 18px;
-  font-family: 'HaasRoman', 'Roboto';
-  }
+  font-size: 13px;
+}
 .project-header-no, .project-content, .project-content p {
   font-size: 18px; }
 .project-pagination {
   font-size: 14px; }
 .project-title {
   font-size: 21px;
-  letter-spacing: 1px;
+  letter-spacing: 4.38px;
   margin-bottom: 0.5em; }
 
 @media (max-width: 767px) {
@@ -264,6 +284,7 @@ a.page-title,
 .footer--sticky.pagination-footer {
   bottom: 40px;
   height: auto;
+  padding: 3em 1em;
 }
 
 .page-footer {
@@ -290,12 +311,12 @@ a.page-title,
 }
 
 .pagination-footer .page-next a:after {
-  content: "âŸ¶";
+  content: "⟶";
   margin-left: 0.5em;
 }
 
 .pagination-footer .page-prev a:before {
-  content: "âŸµ";
+  content: "⟵";
   margin-right: 0.5em;
 }
 
@@ -468,11 +489,11 @@ a.page-title,
 }
 
 .owl-next:after {
-  content: "âŸ¶";
+  content: "⟶";
 }
 
 .owl-prev:before {
-  content: "âŸµ";
+  content: "⟵";
 }
 
 @media (min-width: 991px) {
